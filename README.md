@@ -3,7 +3,7 @@
 **Estudiante:** Albis Ortiz  
 **Universidad:** Universidad Tecnológica de Panamá (UTP)  
 **Carrera:** Licenciatura en Ciberseguridad  
-**Asignatura:** Rede de computadoras  
+**Asignatura:** Redes de computadoras  
 
 ## 📌 Descripción
 
