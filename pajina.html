@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de Albis Ortiz, estudiante de la Licenciatura en Ciberseguridad en la Universidad Tecnológica de Panamá.">
+  <title>Albis Ortiz | Portafolio de Ciberseguridad</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1220;
+      --panel: #121d30;
+      --panel-soft: #17243a;
+      --text: #edf3fb;
+      --muted: #a9b8ca;
+      --accent: #55d6be;
+      --accent-2: #73a7ff;
+      --line: rgba(190, 211, 235, .16);
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 80% 0%, #17304b 0, transparent 35%), var(--bg);
+      color: var(--text);
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 36px)); margin: 0 auto; }
+    header { padding: 26px 0 18px; border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { font-weight: 800; letter-spacing: .3px; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .94rem; }
+    .hero { padding: 74px 0 58px; }
+    .eyebrow { color: var(--accent); font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 820px; margin: 12px 0 16px; font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.08; letter-spacing: -.045em; }
+    .lead { max-width: 760px; color: var(--muted); font-size: 1.12rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button { display: inline-block; border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; color: var(--text); font-weight: 700; background: var(--panel); }
+    .button.primary { background: var(--accent); color: #08201e; border-color: var(--accent); }
+    section { padding: 25px 0; }
+    h2 { margin: 0 0 18px; font-size: 1.65rem; letter-spacing: -.02em; }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: linear-gradient(160deg, rgba(23,36,58,.96), rgba(18,29,48,.96)); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag { display: inline-block; padding: 5px 10px; border-radius: 999px; background: rgba(85,214,190,.1); color: #9be9da; border: 1px solid rgba(85,214,190,.2); font-size: .86rem; }
+    ul { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+    li { margin: 5px 0; }
+    .profile-list { display: grid; grid-template-columns: 170px 1fr; gap: 8px 14px; }
+    .profile-list strong { color: var(--muted); }
+    .notice { border-left: 3px solid var(--accent-2); padding: 12px 16px; background: rgba(115,167,255,.08); border-radius: 0 10px 10px 0; color: var(--muted); }
+    footer { margin-top: 35px; padding: 25px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+    @media (max-width: 720px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .hero { padding: 54px 0 38px; }
+      .grid { grid-template-columns: 1fr; }
+      .profile-list { grid-template-columns: 1fr; gap: 2px; }
+      .profile-list strong { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">ALBIS ORTIZ <span style="color:var(--accent)">/</span> CIBERSEGURIDAD</div>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#intereses">Intereses</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Portafolio académico · Universidad Tecnológica de Panamá</div>
+      <h1>Aprendiendo y construyendo mi camino en la <span style="color:var(--accent)">Ciberseguridad</span>.</h1>
+      <p class="lead">Hola, soy <strong>Albis Ortiz</strong>, estudiante de primer año de la Licenciatura en Ciberseguridad. Este espacio reúne mis conocimientos en formación, herramientas utilizadas y prácticas académicas relacionadas con redes, programación y sistemas operativos.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://www.linkedin.com/in/albis-ortiz-bab040436/" target="_blank" rel="noopener noreferrer">Ver mi LinkedIn</a>
+        <a class="button" href="https://github.com/albisortiz-utp" target="_blank" rel="noopener noreferrer">Mi GitHub</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="card profile-list">
+        <strong>Nombre</strong><span>Albis Ortiz</span>
+        <strong>Institución</strong><span>Universidad Tecnológica de Panamá (UTP)</span>
+        <strong>Facultad</strong><span>Facultad de Ingeniería de Sistemas Computacionales (FISC)</span>
+        <strong>Carrera</strong><span>Licenciatura en Ciberseguridad</span>
+        <strong>Etapa académica</strong><span>Primer año</span>
+        <strong>Asignatura del proyecto</strong><span>Sistemas Colaborativos</span>
+        <strong>País</strong><span>Panamá</span>
+      </div>
+    </section>
+
+    <section id="conocimientos">
+      <h2>Conocimientos académicos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Programación y lógica</h3>
+          <p class="muted">Conocimientos desarrollados en asignaturas y ejercicios académicos.</p>
+          <div class="tags"><span class="tag">C</span><span class="tag">Java · fundamentos</span><span class="tag">PSeInt</span></div>
+        </article>
+        <article class="card">
+          <h3>Redes y direccionamiento</h3>
+          <ul>
+            <li>Creación de redes y conexión de computadoras.</li>
+            <li>Configuración de direcciones IP y máscaras de subred.</li>
+            <li>Configuración básica de routers y switches.</li>
+            <li>Simulación de comunicación entre dispositivos.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Sistemas operativos</h3>
+          <p class="muted">Introducción a Linux y práctica inicial con comandos de terminal como <code>ls</code>, <code>cd</code>, <code>pwd</code>, <code>mkdir</code>, <code>rm</code>, <code>cp</code> y <code>mv</code>.</p>
+        </article>
+        <article class="card">
+          <h3>Áreas de estudio</h3>
+          <p class="muted">Exploración y aprendizaje de temas relacionados con seguridad de redes, hacking ético, análisis de malware y protección de sistemas y datos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="herramientas">
+      <h2>Herramientas utilizadas</h2>
+      <div class="grid">
+        <article class="card"><h3>Cisco Packet Tracer</h3><p class="muted">Prácticas de creación, conexión, direccionamiento y simulación de redes.</p></article>
+        <article class="card"><h3>Visual Studio Code</h3><p class="muted">Entorno utilizado para realizar ejercicios de programación en C y Java.</p></article>
+        <article class="card"><h3>Kali Linux</h3><p class="muted">Primeras prácticas y familiarización con el entorno y la terminal.</p></article>
+        <article class="card"><h3>VirtualBox</h3><p class="muted">Creación y utilización de máquinas virtuales para prácticas académicas.</p></article>
+      </div>
+    </section>
+
+    <section id="intereses">
+      <h2>Habilidades e intereses</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Habilidades personales</h3>
+          <ul>
+            <li>Resolución de problemas.</li>
+            <li>Pensamiento lógico y analítico.</li>
+            <li>Trabajo en equipo.</li>
+            <li>Responsabilidad y compromiso.</li>
+            <li>Curiosidad por la tecnología.</li>
+            <li>Trabajo independiente.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Intereses en Ciberseguridad</h3>
+          <ul>
+            <li>Seguridad de redes.</li>
+            <li>Hacking ético.</li>
+            <li>Análisis de malware.</li>
+            <li>Protección de sistemas y datos.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Prácticas académicas</h2>
+      <div class="card">
+        <h3>Prácticas de redes y direccionamiento IP</h3>
+        <p class="muted">Este portafolio se encuentra en desarrollo. Se incorporarán progresivamente archivos de simulación, capturas y explicaciones de las prácticas realizadas, una vez estén disponibles.</p>
+        <a href="https://github.com/albisortiz-utp/utp-redes-practicas" target="_blank" rel="noopener noreferrer">Consultar repositorio de prácticas en GitHub →</a>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto y perfiles</h2>
+      <div class="card">
+        <p><strong>GitHub:</strong> <a href="https://github.com/albisortiz-utp" target="_blank" rel="noopener noreferrer">github.com/albisortiz-utp</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/albis-ortiz-bab040436/" target="_blank" rel="noopener noreferrer">linkedin.com/in/albis-ortiz-bab040436</a></p>
+        <p class="notice">Este sitio documenta mi proceso de formación. Los conocimientos y prácticas se presentan de acuerdo con mi etapa actual como estudiante.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Albis Ortiz · Portafolio académico de Ciberseguridad · Universidad Tecnológica de Panamá</div>
+  </footer>
+</body>
+</html>
